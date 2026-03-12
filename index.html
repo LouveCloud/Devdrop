@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevDrop | Developer Tools</title>
+    <title>DevDrop | Developer Tools Hub</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-[#0A0A0A] text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
     
     <nav class="flex justify-between items-center px-8 py-6 border-b border-white/10">
@@ -19,27 +21,31 @@
 
     <main class="flex flex-col items-center justify-center min-h-[80vh] text-center px-4 pt-20 md:pt-28">
         
-        <div class="inline-block px-3 py-1 mb-8 text-xs font-semibold tracking-wider text-purple-300 uppercase bg-purple-500/10 border border-purple-500/20 rounded-full">
-            ✨ NEW RELEASE | v1.0 is coming
+        <div class="inline-block px-3 py-1 mb-8 text-xs font-semibold tracking-wider text-purple-300 uppercase bg-purple-500/10 border border-purple-500/20 rounded-full" 
+             data-aos="fade-down">
+            ✨ NEW RELEASE | v1.0 is Live
         </div>
         
-        <h1 id="heroTitle" data-lang="heroTitle" class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500"
+            data-aos="fade-up">
             Developer Tools.<br>Built for Speed.
         </h1>
         
-        <p id="heroDesc" data-lang="heroDesc" class="text-lg text-gray-400 max-w-xl mb-10">
+        <p class="text-lg text-gray-400 max-w-xl mb-10" data-aos="fade-up" data-aos-delay="100">
             Experience the next generation of developer tools. Fast, free, and runs directly in your browser.
         </p>
         
-        <div class="flex gap-4">
-            <a href="#tools-section" class="px-6 py-3 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-colors">
-            Get Started
+        <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="#tools-section" class="px-6 py-3 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
+                Get Started
             </a>
             <a href="https://github.com/LouveCloud/Devdrop" target="_blank" class="px-6 py-3 text-sm font-semibold text-white bg-transparent border border-white/20 rounded-full hover:bg-white/10 transition-colors">
-            Documentation >
+                Documentation >
             </a>
-            </div>
-            <div class="mt-16 w-full max-w-3xl rounded-xl border border-white/10 bg-[#161616] shadow-2xl shadow-purple-900/20 overflow-hidden relative text-left">
+        </div>
+
+        <div class="mt-16 w-full max-w-3xl rounded-xl border border-white/10 bg-[#161616] shadow-2xl shadow-purple-900/20 overflow-hidden relative text-left"
+             data-aos="zoom-in" data-aos-delay="300">
             
             <div class="flex items-center px-4 py-3 border-b border-white/5 bg-[#1E1E1E]">
                 <div class="flex gap-2">
@@ -51,64 +57,57 @@
             </div>
 
             <div class="p-6 overflow-x-auto font-mono text-sm leading-relaxed">
-                <pre><code id="previewCode">
-<span class="text-pink-500">const</span> <span class="text-blue-400">devDropTools</span> <span class="text-white">=</span> {
-  <span class="text-green-300">"formatter"</span>: <span class="text-orange-300">"JSON Formatter"</span>,
-  <span class="text-green-300">"obfuscator"</span>: <span class="text-orange-300">"JS Obfuscator"</span>,
-  <span class="text-green-300">"decoder"</span>: <span class="text-orange-300">"Base64 Tool"</span>,
-  <span class="text-green-300">"status"</span>: <span class="text-purple-400">"Ready for action! 🚀"</span>
-};
-
-<span class="text-gray-500">// Execute without login, right in your browser.</span>
-<span class="text-blue-400">console</span>.<span class="text-yellow-200">log</span>(devDropTools);
-                </code></pre>
+                <pre><code id="previewCode"></code></pre>
             </div>
             
             <div class="absolute -top-24 -left-24 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
         </div>
+
         <section id="tools-section" class="w-full max-w-6xl mx-auto px-4 py-24 mt-10 border-t border-white/10">
-        
-        <h2 id="toolsTitle" data-lang="toolsTitle" class="text-2xl font-bold mb-10 text-center text-white/90">
-            Explore Our Tools
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <h2 class="text-2xl font-bold mb-10 text-center text-white/90" data-aos="fade-up">
+                Explore Our Tools
+            </h2>
             
-            <a href="json-formatter.html" data-aos="fade-up" data-aos-delay="100" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-purple-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
-                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">JSON Formatter</h3>
-                <p data-lang="descJson" class="text-gray-400 text-sm">Format, validate, and beautify your messy JSON data instantly.</p>
-            </a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="json-formatter.html" data-aos="fade-up" data-aos-delay="100" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-purple-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">JSON Formatter</h3>
+                    <p class="text-gray-400 text-sm">Format, validate, and beautify your messy JSON data instantly.</p>
+                </a>
 
-            <a href="js-obfuscator.html" data-aos="fade-up" data-aos-delay="200" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-yellow-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
-                <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">JS Obfuscator</h3>
-                <p data-lang="descObs" class="text-gray-400 text-sm">Protect your JavaScript code by making it unreadable but fully functional.</p>
-            </a>
+                <a href="js-obfuscator.html" data-aos="fade-up" data-aos-delay="200" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-yellow-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">JS Obfuscator</h3>
+                    <p class="text-gray-400 text-sm">Protect your JavaScript code by making it unreadable but fully functional.</p>
+                </a>
 
-            <a href="base64-tool.html" data-aos="fade-up" data-aos-delay="300" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
-                <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h13.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3.2"/></svg>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Base64 Converter</h3>
-                <p data-lang="descBase" class="text-gray-400 text-sm">Quickly encode and decode text or data into Base64 format.</p>
-            </a>
-
-        </div>
-    </section>
+                <a href="base64-tool.html" data-aos="fade-up" data-aos-delay="300" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h13.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3.2"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Base64 Converter</h3>
+                    <p class="text-gray-400 text-sm">Quickly encode and decode text or data into Base64 format.</p>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer class="py-10 text-center border-t border-white/10 text-gray-500 text-sm">
+        <p>&copy; 2026 DevDrop. Built with ❤️ for developers.</p>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // Kecepatan animasi (1 detik)
-    once: true,     // Animasi cuma jalan sekali pas di-scroll
-  });
-</script>
+    <script src="script.js"></script>
+    <script>
+        // Inisialisasi Animasi AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>

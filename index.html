@@ -74,7 +74,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <a href="json-formatter.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-purple-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+            <a href="json-formatter.html" data-aos="fade-up" data-aos-delay="100" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-purple-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
                 <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                 </div>
@@ -82,7 +82,7 @@
                 <p data-lang="descJson" class="text-gray-400 text-sm">Format, validate, and beautify your messy JSON data instantly.</p>
             </a>
 
-            <a href="js-obfuscator.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-yellow-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+            <a href="js-obfuscator.html" data-aos="fade-up" data-aos-delay="200" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-yellow-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
                 <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                 </div>
@@ -90,7 +90,7 @@
                 <p data-lang="descObs" class="text-gray-400 text-sm">Protect your JavaScript code by making it unreadable but fully functional.</p>
             </a>
 
-            <a href="base64-tool.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+            <a href="base64-tool.html" data-aos="fade-up" data-aos-delay="300" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
                 <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h13.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3.2"/></svg>
                 </div>
@@ -103,5 +103,12 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Kecepatan animasi (1 detik)
+    once: true,     // Animasi cuma jalan sekali pas di-scroll
+  });
+</script>
 </body>
 </html>

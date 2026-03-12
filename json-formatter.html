@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter | DevDrop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0A0A0A] text-white font-sans antialiased selection:bg-purple-500 selection:text-white min-h-screen flex flex-col">
+    
+    <nav class="flex justify-between items-center px-8 py-6 border-b border-white/10">
+        <a href="index.html" class="font-bold text-xl tracking-tighter flex items-center gap-2 hover:text-purple-400 transition-colors">
+            <div class="w-5 h-5 rounded-full border-[3px] border-white/80"></div> 
+            DevDrop
+        </a>
+        <div class="text-sm font-semibold text-gray-400">JSON Formatter</div>
+    </nav>
+
+    <main class="flex-grow flex flex-col p-6 max-w-7xl w-full mx-auto">
+
+        <a href="index.html" data-lang="backBtn" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-6 transition-colors w-fit group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:-translate-x-1 transition-transform"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+        
+        <div class="mb-6 flex justify-between items-end">
+            <div>
+                <h1 data-lang="titleJson" class="text-3xl font-bold mb-2">JSON Formatter</h1>
+                <p data-lang="subJson" class="text-gray-400 text-sm">Paste your messy JSON below to format and validate it.</p>
+            </div>
+            
+            <div class="flex gap-3">
+                <button id="btnFormat" class="px-5 py-2 text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-200 transition-colors shadow-lg shadow-white/10">
+                    Format JSON ✨
+                </button>
+                <button id="btnClear" class="px-5 py-2 text-sm font-semibold text-white bg-red-500/10 border border-red-500/20 rounded-lg hover:bg-red-500/20 text-red-400 transition-colors">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow">
+            
+            <div class="flex flex-col h-full min-h-[500px]">
+                <div class="bg-[#1E1E1E] px-4 py-2 rounded-t-xl border border-white/10 border-b-0 text-xs font-mono text-gray-400">
+                    Input (Messy JSON)
+                </div>
+                <textarea id="jsonInput" class="w-full h-full flex-grow bg-[#161616] border border-white/10 rounded-b-xl p-4 font-mono text-sm text-gray-300 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/50 resize-none" placeholder='{"paste": "your", "messy": "json here"}'></textarea>
+            </div>
+
+            <div class="flex flex-col h-full min-h-[500px]">
+                <div class="bg-[#1E1E1E] px-4 py-2 rounded-t-xl border border-white/10 border-b-0 flex justify-between items-center text-xs font-mono text-gray-400">
+                    <span>Output (Formatted JSON)</span>
+                    <button id="btnCopy" class="hover:text-white transition-colors">Copy 📋</button>
+                </div>
+                <textarea id="jsonOutput" readonly class="w-full h-full flex-grow bg-[#0f0f0f] border border-white/10 rounded-b-xl p-4 font-mono text-sm text-green-400 focus:outline-none resize-none" placeholder="Result will appear here..."></textarea>
+            </div>
+
+        </div>
+        
+        <div id="errorMessage" class="hidden mt-4 p-3 bg-red-500/10 border border-red-500/50 text-red-400 rounded-lg text-sm font-mono">
+            Invalid JSON format! Please check your input.
+        </div>
+        
+    </main>
+
+    <script src="json-tool.js"></script>
+</body>
+</html>

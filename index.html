@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDrop | Developer Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0A0A0A] text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
+    
+    <nav class="flex justify-between items-center px-8 py-6 border-b border-white/10">
+        <div class="font-bold text-xl tracking-tighter flex items-center gap-2">
+            <div class="w-5 h-5 rounded-full border-[3px] border-white/80"></div> 
+            DevDrop
+        </div>
+    </nav>
+
+    <main class="flex flex-col items-center justify-center min-h-[80vh] text-center px-4 pt-20 md:pt-28">
+        
+        <div class="inline-block px-3 py-1 mb-8 text-xs font-semibold tracking-wider text-purple-300 uppercase bg-purple-500/10 border border-purple-500/20 rounded-full">
+            ✨ NEW RELEASE | v1.0 is coming
+        </div>
+        
+        <h1 id="heroTitle" data-lang="heroTitle" class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">
+            Developer Tools.<br>Built for Speed.
+        </h1>
+        
+        <p id="heroDesc" data-lang="heroDesc" class="text-lg text-gray-400 max-w-xl mb-10">
+            Experience the next generation of developer tools. Fast, free, and runs directly in your browser.
+        </p>
+        
+        <div class="flex gap-4">
+            <button id="btnGetStarted" class="px-6 py-3 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-colors">
+                Get Started
+            </button>
+            <button class="px-6 py-3 text-sm font-semibold text-white bg-transparent border border-white/20 rounded-full hover:bg-white/10 transition-colors">
+                Documentation >
+            </button>
+        </div>
+        <div class="mt-16 w-full max-w-3xl rounded-xl border border-white/10 bg-[#161616] shadow-2xl shadow-purple-900/20 overflow-hidden relative text-left">
+            
+            <div class="flex items-center px-4 py-3 border-b border-white/5 bg-[#1E1E1E]">
+                <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                </div>
+                <div class="ml-4 text-xs text-gray-500 font-mono">devdrop_config.json</div>
+            </div>
+
+            <div class="p-6 overflow-x-auto font-mono text-sm leading-relaxed">
+                <pre><code id="previewCode">
+<span class="text-pink-500">const</span> <span class="text-blue-400">devDropTools</span> <span class="text-white">=</span> {
+  <span class="text-green-300">"formatter"</span>: <span class="text-orange-300">"JSON Formatter"</span>,
+  <span class="text-green-300">"obfuscator"</span>: <span class="text-orange-300">"JS Obfuscator"</span>,
+  <span class="text-green-300">"decoder"</span>: <span class="text-orange-300">"Base64 Tool"</span>,
+  <span class="text-green-300">"status"</span>: <span class="text-purple-400">"Ready for action! 🚀"</span>
+};
+
+<span class="text-gray-500">// Execute without login, right in your browser.</span>
+<span class="text-blue-400">console</span>.<span class="text-yellow-200">log</span>(devDropTools);
+                </code></pre>
+            </div>
+            
+            <div class="absolute -top-24 -left-24 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+        <section id="tools-section" class="w-full max-w-6xl mx-auto px-4 py-24 mt-10 border-t border-white/10">
+        
+        <h2 id="toolsTitle" data-lang="toolsTitle" class="text-2xl font-bold mb-10 text-center text-white/90">
+            Explore Our Tools
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <a href="json-formatter.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-purple-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-white">JSON Formatter</h3>
+                <p data-lang="descJson" class="text-gray-400 text-sm">Format, validate, and beautify your messy JSON data instantly.</p>
+            </a>
+
+            <a href="js-obfuscator.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-yellow-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-white">JS Obfuscator</h3>
+                <p data-lang="descObs" class="text-gray-400 text-sm">Protect your JavaScript code by making it unreadable but fully functional.</p>
+            </a>
+
+            <a href="base64-tool.html" class="block p-6 rounded-2xl bg-[#161616] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h13.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3.2"/></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Base64 Converter</h3>
+                <p data-lang="descBase" class="text-gray-400 text-sm">Quickly encode and decode text or data into Base64 format.</p>
+            </a>
+
+        </div>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

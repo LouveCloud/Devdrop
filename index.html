@@ -139,24 +139,31 @@
                         </ul>
                     </div>
 
-                    <div class="lg:col-span-3 flex flex-col items-center relative" data-aos="fade-left">
-                        
-                        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 transform hover:scale-[1.25] lg:hover:scale-[1.35] hover:z-50 hover:shadow-purple-500/40 cursor-zoom-in group w-full bg-[#0A0A0A]">
-                            
-                            <video autoplay loop muted playsinline class="w-full h-auto">
-                                <source src="demo-devdrop.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none"></div>
-                        </div>
+<div class="lg:col-span-3 flex flex-col items-center relative">
+    
+    <div class="relative w-full overflow-visible group">
+        
+        <div class="relative rounded-2xl border border-white/10 shadow-2xl transition-all duration-500 transform 
+                    hover:scale-[1.6] lg:hover:scale-[1.8] hover:z-[100] hover:shadow-purple-500/40 
+                    cursor-zoom-in bg-[#0A0A0A] origin-center">
+            
+            <video autoplay loop muted playsinline class="w-full h-auto rounded-2xl">
+                <source src="demo-devdrop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent opacity-60 
+                        transition-opacity duration-300 group-hover:opacity-0 pointer-events-none rounded-2xl"></div>
+        </div>
 
-                        <p class="mt-8 text-xs text-gray-500 flex items-center gap-2 animate-pulse">
-                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
-                            Hover the video to zoom
-                        </p>
-                        
-                    </div>
+    </div>
+
+    <p class="mt-12 text-xs text-gray-500 flex items-center gap-2 animate-pulse">
+        <i data-lucide="zoom-in" class="w-4 h-4"></i>
+        Hover to expand view
+    </p>
+    
+</div>
                 </div>
                 </div>
                 <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>

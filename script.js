@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Jalankan efek mengetik pada Code Preview
     Typewriter.init();
 
+    // Panggil ikon Lucide biar muncul! ✨
+    lucide.createIcons();
+
     // Tambahkan logika scroll halus (Smooth Scroll) untuk navigasi internal
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

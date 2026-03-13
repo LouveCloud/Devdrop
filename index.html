@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#0A0A0A] text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
+<body class="bg-[#0A0A0A] text-white font-sans antialiased selection:bg-purple-500 selection:text-white overflow-x-hidden">
     
     <nav class="flex justify-between items-center px-8 py-6 border-b border-white/10">
         <div class="font-bold text-xl tracking-tighter flex items-center gap-2">
@@ -137,13 +137,23 @@
                             </li>
                         </ul>
                     </div>
-                        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-aos="fade-left">
+                        <div class="lg:col-span-3 flex flex-col items-center" data-aos="fade-left">
+                        
+                        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:scale-[1.15] hover:z-50 hover:shadow-purple-500/20 cursor-zoom-in group">
                             <video autoplay loop muted playsinline class="w-full h-auto">
-                            <source src="demo-devdrop.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                             </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent opacity-60"></div>
+                                <source src="demo-devdrop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none"></div>
                         </div>
+
+                        <p class="mt-6 text-xs text-gray-500 flex items-center gap-2 animate-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                            Hover the video to zoom
+                        </p>
+                        
+                    </div>
                     </div>
                 </div>
                 <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>

@@ -1,0 +1,28 @@
+/* --- ANIMASI BADGE TERBARU --- */
+
+/* 1. Definisi Animasi RGB (Rainbow) */
+@keyframes rainbow-text {
+    0% { color: #ff0000; }   /* Merah */
+    17% { color: #ff8000; }  /* Jingga */
+    33% { color: #ffff00; }  /* Kuning */
+    50% { color: #00ff00; }  /* Hijau */
+    67% { color: #0080ff; }  /* Biru */
+    83% { color: #8000ff; }  /* Ungu */
+    100% { color: #ff0000; } /* Kembali ke Merah */
+}
+
+/* 2. Definisi Animasi Melayang (Floating) */
+@keyframes float-badge {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); } /* Melayang naik 6px */
+    100% { transform: translateY(0px); } /* Kembali turun */
+}
+
+/* 3. Class untuk Menerapkan Animasi */
+.animate-rainbow {
+    animation: rainbow-text 4s linear infinite; /* Kecepatan 4 detik */
+}
+
+.animate-float-badge {
+    animation: float-badge 2s ease-in-out infinite; /* Kecepatan 2 detik */
+}

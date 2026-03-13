@@ -12,7 +12,7 @@ const CONFIG = {
   "decoder": "Base64 Tool",
   "status": "Ready for action! 🚀"
 };`,
-    typingSpeed: 10 // milidetik per karakter
+    typingSpeed: 20 // milidetik per karakter
 };
 
 // 2. MODUL ANIMASI (Typewriter)
